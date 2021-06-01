@@ -2803,8 +2803,6 @@ packages:
   /any-observable/0.3.0:
     resolution: {integrity: sha512-/FQM1EDkTsf63Ub2C6O7GuYFDsSXUwsaZDurV0np41ocwq0jthUAYCmhBX9f+KwlaCgIuWyr/4WlUQUBfKfZog==}
     engines: {node: '>=6'}
-    dependencies:
-      rxjs: 6.6.7
     dev: true
 
   /anymatch/2.0.0:
@@ -6863,7 +6861,6 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       '@samverschueren/stream-to-observable': 0.3.1_rxjs@6.6.7
-      any-observable: 0.3.0
       is-observable: 1.1.0
       is-promise: 2.2.2
       is-stream: 1.1.0
