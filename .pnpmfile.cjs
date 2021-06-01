@@ -3,7 +3,7 @@ module.exports = {
     readPackage: (package) => {
       switch (package.name) {
         case 'any-observable':
-          package.devDependencies.rxjs = '>=6.0.0';
+          package.dependencies.rxjs = package.devDependencies.rxjs;
 
           break;
       }
