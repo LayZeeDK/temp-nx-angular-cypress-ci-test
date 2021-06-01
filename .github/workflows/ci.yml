@@ -1,0 +1,25 @@
+name: CI workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - name: Install PNPM
+        run: npm install --global pnpm@5.x
+      - run: pnpm install
+
+      - run: yarn e2e
