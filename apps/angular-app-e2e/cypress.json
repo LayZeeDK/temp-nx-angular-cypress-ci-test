@@ -1,12 +1,15 @@
 {
-  "defaultCommandTimeout": 60000,
+  "browser": "chrome",
+  "defaultCommandTimeout": 120000,
   "fileServerFolder": ".",
   "fixturesFolder": "./src/fixtures",
   "integrationFolder": "./src/integration",
+  "headed": false,
+  "headless": true,
   "modifyObstructiveCode": false,
   "pluginsFile": "./src/plugins/index",
   "supportFile": "./src/support/index.ts",
-  "video": true,
+  "video": false,
   "videosFolder": "../../dist/cypress/apps/angular-app-e2e/videos",
   "screenshotsFolder": "../../dist/cypress/apps/angular-app-e2e/screenshots",
   "chromeWebSecurity": false
