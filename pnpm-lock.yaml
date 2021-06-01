@@ -28,7 +28,7 @@ specifiers:
   '@types/node': ^14.14.33
   '@typescript-eslint/eslint-plugin': ~4.19.0
   '@typescript-eslint/parser': ~4.19.0
-  any-observable: ^0.5.1
+  any-observable: ~0.3.0
   cypress: ^7.4.0
   dotenv: ~8.2.0
   eslint: ~7.22.0
@@ -77,7 +77,7 @@ devDependencies:
   '@types/node': 14.17.1
   '@typescript-eslint/eslint-plugin': 4.19.0_f2ad7386ef3401c53424c22cc09210d8
   '@typescript-eslint/parser': 4.19.0_eslint@7.22.0+typescript@4.2.4
-  any-observable: 0.5.1_rxjs@6.6.7
+  any-observable: 0.3.0
   cypress: 7.4.0
   dotenv: 8.2.0
   eslint: 7.22.0
@@ -1821,7 +1821,7 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
-      '@types/istanbul-reports': 3.0.0
+      '@types/istanbul-reports': 3.0.1
       '@types/node': 14.17.1
       '@types/yargs': 15.0.13
       chalk: 4.1.1
@@ -2184,8 +2184,8 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
 
-  /@types/istanbul-reports/3.0.0:
-    resolution: {integrity: sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA==}
+  /@types/istanbul-reports/3.0.1:
+    resolution: {integrity: sha512-c3mAZEuK0lvBp8tmuL74XRKn1+y2dcwOUpH7x4WrF6gk1GIgiluDRgMYQtw2OFcBvAJWlt6ASU3tSqxp0Uu0Aw==}
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
 
@@ -2803,21 +2803,6 @@ packages:
   /any-observable/0.3.0:
     resolution: {integrity: sha512-/FQM1EDkTsf63Ub2C6O7GuYFDsSXUwsaZDurV0np41ocwq0jthUAYCmhBX9f+KwlaCgIuWyr/4WlUQUBfKfZog==}
     engines: {node: '>=6'}
-    dev: true
-
-  /any-observable/0.5.1_rxjs@6.6.7:
-    resolution: {integrity: sha512-8zv01bgDOp9PTmRTNCAHTw64TFP2rvlX4LvtNJLachaXY+AjmIvLT47fABNPCiIe89hKiSCo2n5zmPqI9CElPA==}
-    engines: {node: '>=8'}
-    peerDependencies:
-      rxjs: '*'
-      zen-observable: '*'
-    peerDependenciesMeta:
-      rxjs:
-        optional: true
-      zen-observable:
-        optional: true
-    dependencies:
-      rxjs: 6.6.7
     dev: true
 
   /anymatch/2.0.0:
