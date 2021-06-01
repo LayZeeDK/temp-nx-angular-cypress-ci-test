@@ -1,12 +1,15 @@
 module.exports = {
   hooks: {
     readPackage: (package) => {
-      // switch (package.name) {
-      //   case 'any-observable':
-      //     package.dependencies['rxjs'] = '~6.6.0';
+      switch (package.name) {
+        case 'any-observable':
+          package.devDependencies.rxjs = package.devDependencies.rxjs.replace(
+            '^',
+            '>='
+          );
 
-      //     break;
-      // }
+          break;
+      }
 
       return package;
     },
