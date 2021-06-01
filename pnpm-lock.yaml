@@ -2070,10 +2070,11 @@ packages:
       yargs: 15.4.1
       yargs-parser: 20.0.0
 
-  /@samverschueren/stream-to-observable/0.3.1:
+  /@samverschueren/stream-to-observable/0.3.1_rxjs@6.6.7:
     resolution: {integrity: sha512-c/qwwcHyafOQuVQJj0IlBjf5yYgBI7YPJ77k4fOJYesb41jio65eaJODRUmfYKhTOFBrIZ66kgvGPlNbjuoRdQ==}
     engines: {node: '>=6'}
     peerDependencies:
+      rxjs: '*'
       zen-observable: '*'
     peerDependenciesMeta:
       rxjs:
@@ -2802,8 +2803,6 @@ packages:
   /any-observable/0.3.0:
     resolution: {integrity: sha512-/FQM1EDkTsf63Ub2C6O7GuYFDsSXUwsaZDurV0np41ocwq0jthUAYCmhBX9f+KwlaCgIuWyr/4WlUQUBfKfZog==}
     engines: {node: '>=6'}
-    dependencies:
-      rxjs: 6.6.7
     dev: true
 
   /anymatch/2.0.0:
@@ -4132,7 +4131,6 @@ packages:
       pretty-bytes: 5.6.0
       ramda: 0.27.1
       request-progress: 3.0.0
-      rxjs: 6.6.7
       supports-color: 8.1.1
       tmp: 0.2.1
       untildify: 4.0.0
@@ -6861,7 +6859,7 @@ packages:
     resolution: {integrity: sha512-RmAl7su35BFd/xoMamRjpIE4j3v+L28o8CT5YhAXQJm1fD+1l9ngXY8JAQRJ+tFK2i5njvi0iRUKV09vPwA0iA==}
     engines: {node: '>=6'}
     dependencies:
-      '@samverschueren/stream-to-observable': 0.3.1
+      '@samverschueren/stream-to-observable': 0.3.1_rxjs@6.6.7
       any-observable: 0.3.0
       is-observable: 1.1.0
       is-promise: 2.2.2
