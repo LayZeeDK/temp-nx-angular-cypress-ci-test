@@ -2887,21 +2887,6 @@ packages:
       yargs: 15.4.1
       yargs-parser: 20.0.0
 
-  /@samverschueren/stream-to-observable/0.3.1:
-    resolution: {integrity: sha512-c/qwwcHyafOQuVQJj0IlBjf5yYgBI7YPJ77k4fOJYesb41jio65eaJODRUmfYKhTOFBrIZ66kgvGPlNbjuoRdQ==}
-    engines: {node: '>=6'}
-    peerDependencies:
-      zen-observable: '*'
-    peerDependenciesMeta:
-      rxjs:
-        optional: true
-      zen-observable:
-        optional: true
-    dependencies:
-      any-observable: 0.3.0
-      rxjs: 6.6.7
-    dev: true
-
   /@samverschueren/stream-to-observable/0.3.1_rxjs@6.6.7:
     resolution: {integrity: sha512-c/qwwcHyafOQuVQJj0IlBjf5yYgBI7YPJ77k4fOJYesb41jio65eaJODRUmfYKhTOFBrIZ66kgvGPlNbjuoRdQ==}
     engines: {node: '>=6'}
@@ -3652,9 +3637,6 @@ packages:
   /any-observable/0.3.0:
     resolution: {integrity: sha512-/FQM1EDkTsf63Ub2C6O7GuYFDsSXUwsaZDurV0np41ocwq0jthUAYCmhBX9f+KwlaCgIuWyr/4WlUQUBfKfZog==}
     engines: {node: '>=6'}
-    dependencies:
-      '@samverschueren/stream-to-observable': 0.3.1
-      rxjs: 6.6.7
     dev: true
 
   /anymatch/2.0.0:
@@ -4975,11 +4957,9 @@ packages:
       '@cypress/listr-verbose-renderer': 0.4.1
       '@cypress/request': 2.88.5
       '@cypress/xvfb': 1.2.4
-      '@samverschueren/stream-to-observable': 0.3.1
       '@types/node': 14.14.33
       '@types/sinonjs__fake-timers': 6.0.2
       '@types/sizzle': 2.3.3
-      any-observable: 0.3.0
       arch: 2.2.0
       blob-util: 2.0.2
       bluebird: 3.7.2
@@ -5008,7 +4988,6 @@ packages:
       pretty-bytes: 5.6.0
       ramda: 0.27.1
       request-progress: 3.0.0
-      rxjs: 6.6.7
       supports-color: 8.1.1
       tmp: 0.2.1
       untildify: 4.0.0
@@ -5087,19 +5066,6 @@ packages:
     dependencies:
       ms: 2.1.2
       supports-color: 6.1.0
-    dev: true
-
-  /debug/4.3.1_supports-color@8.1.1:
-    resolution: {integrity: sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==}
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-    dependencies:
-      ms: 2.1.2
-      supports-color: 8.1.1
     dev: true
 
   /debug/4.3.2_supports-color@8.1.1:
@@ -5815,7 +5781,7 @@ packages:
     engines: {node: '>= 10.17.0'}
     hasBin: true
     dependencies:
-      debug: 4.3.1_supports-color@8.1.1
+      debug: 4.3.2_supports-color@8.1.1
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -7780,7 +7746,6 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       '@samverschueren/stream-to-observable': 0.3.1_rxjs@6.6.7
-      any-observable: 0.3.0
       is-observable: 1.1.0
       is-promise: 2.2.2
       is-stream: 1.1.0
