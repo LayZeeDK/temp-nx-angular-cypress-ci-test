@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 14.x
       - name: Install PNPM
-        run: npm install --global pnpm@5.x
+        run: npm install --global pnpm@6.x
       - run: pnpm install
 
-      - run: yarn e2e
+      - run: pnpm e2e
