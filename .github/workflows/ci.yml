@@ -38,4 +38,4 @@ jobs:
         run: npm install --global pnpm@6.x
       - run: pnpm install
 
-      - run: pnpm run e2e -- --browser=${{ matrix.browser }}
+      - run: pnpx nx e2e angular-app-e2e --browser=${{ matrix.browser }}
