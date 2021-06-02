@@ -36,4 +36,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
 
-      - run: pnpx nx e2e angular-app-e2e --browser=${{ matrix.browser }}
+      - run: npx nx e2e angular-app-e2e --browser=${{ matrix.browser }}
