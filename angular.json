@@ -132,6 +132,7 @@
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
+            "browser": "chrome",
             "cypressConfig": "apps/angular-app-e2e/cypress.json",
             "tsConfig": "apps/angular-app-e2e/tsconfig.e2e.json",
             "devServerTarget": "angular-app:serve:development"
