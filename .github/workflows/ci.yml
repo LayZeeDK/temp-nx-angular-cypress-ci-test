@@ -34,8 +34,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install PNPM
-        run: npm install --global pnpm@6.x
-      - run: pnpm install
+      - run: yarn install
 
       - run: pnpx nx e2e angular-app-e2e --browser=${{ matrix.browser }}
